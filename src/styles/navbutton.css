@@ -1,0 +1,40 @@
+#navButton {
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    color: lightblue;
+    text-decoration: none;
+    font-family: Quicksand, sans-serif;
+    font-size: 2rem;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    outline: none;
+}
+
+#navButton:hover {
+    color: whitesmoke;
+    text-decoration: none;
+    transition: background-color 0.5s;
+    transition: color 0.5s;
+}
+
+#navButton:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+#navButton:hover:after {
+    width: 100%;
+    left: 0;
+}

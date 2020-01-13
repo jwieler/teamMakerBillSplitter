@@ -1,0 +1,8 @@
+#editingListElement {
+    font-family: Quicksand, sans-serif;
+    color: whitesmoke;
+}
+
+#editingListElement input{
+    padding: 5px;
+}

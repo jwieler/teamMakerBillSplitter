@@ -1,0 +1,24 @@
+#aboutRoot {
+    margin-top: 74px;
+}
+
+#aboutContainer {
+    padding: 10px;
+    text-align: left;
+    font-family: Quicksand, sans-serif;
+    color: whitesmoke;
+    width: 66%;
+    margin: auto;
+}
+
+#aboutContainer img {
+    max-width: 400px;
+    width: 200px;
+    border-radius: 50%;
+    border: 1px dashed whitesmoke;
+    cursor: default;
+}
+
+#aboutContainer p{
+    text-indent: 50px;
+}

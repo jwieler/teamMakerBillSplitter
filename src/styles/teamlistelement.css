@@ -1,0 +1,12 @@
+.indent {
+    text-indent: 20px;
+}
+
+.story p {
+    color: whitesmoke;
+    background-color: transparent;
+}
+
+.bold {
+    font-weight: bold;
+}

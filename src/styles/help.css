@@ -1,0 +1,39 @@
+ul {
+    list-style: none;
+}
+
+#helpRoot {
+    margin-top: 74px;
+    font-family: Quicksand, sans-serif;
+}
+
+#helpContainer {
+    font-family: Quicksand, sans-serif;
+    color: whitesmoke;
+    width: 66%;
+    margin: auto;
+}
+
+#instructions {
+    text-align: left;
+}
+#instructions p {
+    text-indent: 50px;
+}
+
+#instructions h1 {
+    text-decoration: underline;
+}
+
+#FAQ {
+    text-align: left;
+    font-family: Quicksand, sans-serif;
+}
+
+.listBox {
+    border-radius: 10px;
+    background-color: #333;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 20px;
+}

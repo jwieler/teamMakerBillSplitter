@@ -1,0 +1,205 @@
+#teamOuterContainer {
+    text-align: left;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 74px;
+}
+#teamsRoot {
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    color: whitesmoke;
+}
+button {
+    padding: 1px;
+    border-radius: 10%;
+    background-color: whitesmoke;
+}
+#nav {
+    background-color: lightblue;
+    margin-top: 0px;
+}
+#root {
+    text-align: center;
+}
+
+#teamOuterContainer p {
+    color: whitesmoke;
+}
+
+#makeTeams {
+    margin-top: 10px;
+    padding: 5px;
+}
+
+#nameInput {
+    padding: 5px;
+    width: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: Quicksand, sans-serif;
+    font-size: 1em;
+    transition: border-bottom 0.5s;
+    outline: none;
+}
+
+#nameInput:focus {
+    border-bottom: 2px solid lightblue;
+    transition: border-bottom 0.5s;
+    outline: none;
+}
+
+#nameInputEdit {
+    padding: 5px;
+    width: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    outline: none;
+    transition: border-bottom 0.5s;
+}
+
+#nameInputEdit :focus {
+    border-bottom: 2px solid lightblue;
+    transition: border-bottom 0.5s;
+    outline: none;
+}
+
+.editing-list-input {
+    padding: 5px;
+    width: 50%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid whitesmoke;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    outline: none;
+    transition: border-bottom 0.5s;
+}
+
+.editing-list-input:focus {
+    border-bottom: 2px solid lightblue;
+    transition: border-bottom 0.5s;
+    outline: none;
+}
+
+#nameListContainer {
+    margin-bottom: 10px;
+    overflow-x: hidden;
+}
+
+#collapseTeamList {
+    padding: 5px;
+}
+
+#clearTeamList {
+    padding: 5px;
+}
+
+.collapseTeamList {
+    display: none;
+}
+
+.collapsed {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#editingForm {
+    font-family: Quicksand, sans-serif;
+    color: whitesmoke;
+    margin-top: 15px;
+}
+
+.warning {
+    display: none;
+}
+
+.editing {
+    display: none;
+}
+
+.showBox {
+    border: 1px solid whitesmoke;
+}
+
+#warningImg {
+    margin-top: 5px;
+}
+
+.teamNameEdit {
+    display: none;
+}
+
+.editTeamNameConfirmButton {
+    display: none;
+}
+
+[data-tip] {
+    position: relative;
+}
+[data-tip]:before {
+    content: "";
+    /* hides the tooltip when not hovered */
+    display: none;
+    content: "";
+    display: none;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 5px solid #1a1a1a;
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    z-index: 8;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 190px;
+    left: 35px;
+    z-index: 8;
+    font-size: 0;
+    line-height: 0;
+    width: 0;
+    height: 0;
+}
+[data-tip]:after {
+    display: none;
+    content: attr(data-tip);
+    position: absolute;
+    top: 195px;
+    left: 0px;
+    padding: 5px 8px;
+    background: #1a1a1a;
+    color: #fff;
+    z-index: 9;
+    font-size: 0.75em;
+    height: 18px;
+    line-height: 18px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+[data-tip]:hover:before,
+[data-tip]:hover:after {
+    display: block;
+}

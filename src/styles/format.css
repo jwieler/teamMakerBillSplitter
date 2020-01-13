@@ -1,0 +1,51 @@
+#formatRoot {
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+}
+
+#formatContainer {
+    text-align: left;
+    margin: auto;
+    width: 90%;
+}
+
+#selectDelim {
+    background-color: transparent;
+    color: whitesmoke;
+    outline: none;
+    font-size: 1em;
+    font-family: Quicksand, sans-serif;
+}
+
+#otherInput {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: solid 2px whitesmoke;
+    padding: 5px;
+    font-size: 1em;
+    color: whitesmoke;
+    width: 50%;
+}
+
+#newList {
+    overflow: auto;
+}
+
+.other-false {
+    display: none;
+}
+
+button {
+    padding: 5px;
+}
+
+button:hover {
+    background-color: #bababa;
+    transition: background-color 0.5s;
+    cursor: pointer;
+}
+
+button:active {
+    color: lightblue;
+}

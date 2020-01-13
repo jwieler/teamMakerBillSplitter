@@ -1,0 +1,18 @@
+.number-input {
+    padding: 5px;
+    width: 30px;
+    background-color: transparent;
+    color: whitesmoke;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1em;
+    border: none;
+    border-bottom: solid 2px whitesmoke;
+    transition: border-bottom 0.5s;
+}
+
+.number-input:focus {
+    outline: none;
+    border-bottom: solid 2px lightblue;
+    transition: border-bottom 0.5s;
+    outline: focus;
+}

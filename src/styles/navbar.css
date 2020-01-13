@@ -1,0 +1,510 @@
+#nav {
+    position: fixed;
+    height: 45px;
+    width: 100%;
+}
+#navBar {
+    background-color: rgb(30, 187, 215);
+    color: whitesmoke;
+    height: 64px;
+    top: 0px;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    position: fixed;
+    z-index: 3;
+}
+
+#backButtonSmall {
+    left: 0px;
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    margin: 12px;
+    vertical-align: middle;
+    outline: none;
+    height: 25%;
+}
+
+.menu {
+    position: fixed;
+    z-index: 2;
+    border-bottom-left-radius: 5%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+    background-color: #333;
+    right: -240px;
+    margin-top: 0px;
+    text-align: left;
+    transition: right 0.5s;
+    display: inline-block;
+    margin-top: 64px;
+}
+
+#linkList {
+    list-style: none;
+    top: 0;
+}
+
+#testMenu {
+    font-family: Quicksand, sans-serif;
+    font-size: 2rem;
+    padding: 20px;
+    overflow: hidden;
+    background-color: #333;
+    justify-content: center;
+}
+
+.show {
+    transition: margin-top 1s;
+    right: 0;
+    transition: right 0.5s;
+}
+#testMenu a {
+    color: lightblue;
+    text-decoration: none;
+}
+#testMenu a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+#testMenu a:active {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+#replaceA {
+    color: lightblue;
+    text-decoration: none;
+}
+
+#replaceA:active {
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+}
+
+#replaceA:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#aList a:hover {
+    cursor: pointer;
+}
+
+.link-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 0%;
+    cursor: pointer;
+    color: lightblue;
+    text-decoration: none;
+    font-family: Quicksand, sans-serif;
+    font-size: 2rem;
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: color 0.25s;
+    transition: background-color 0.5s;
+    transition: text-decoration 1s;
+    text-decoration: none;
+
+    display: inline-block;
+    position: relative;
+}
+
+.link-button:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.link-button:hover:after {
+    width: 100%;
+    left: 0;
+}
+
+.link-button:hover {
+    background-color: transparent;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+.link-button:focus {
+    background-color: transparent;
+    color: white;
+    transition: background-color 0.5s;
+    outline: none;
+}
+
+* {
+    padding: 0;
+}
+
+/* Icon 1 */
+
+#nav-icon1,
+#nav-icon2,
+#nav-icon3,
+#nav-icon4 {
+    width: 30px;
+    height: 25px;
+    position: relative;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+#nav-icon1 span,
+#nav-icon3 span,
+#nav-icon4 span {
+    display: block;
+    position: absolute;
+    height: 4.5px;
+    width: 100%;
+    background: whitesmoke;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+#nav-icon1 span:nth-child(1) {
+    top: 9px;
+}
+
+#nav-icon1 span:nth-child(2) {
+    top: 18px;
+}
+
+#nav-icon1 span:nth-child(3) {
+    top: 27px;
+}
+
+#nav-icon1.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+
+#nav-icon1.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+
+#nav-icon1.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+
+#nav-icon2 span {
+    display: block;
+    position: absolute;
+    height: 9px;
+    width: 50%;
+    background: whitesmoke;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+}
+
+#nav-icon2 span:nth-child(even) {
+    left: 50%;
+    border-radius: 0 9px 9px 0;
+}
+
+#nav-icon2 span:nth-child(odd) {
+    left: 0px;
+    border-radius: 9px 0 0 9px;
+}
+
+#nav-icon2 span:nth-child(1),
+#nav-icon2 span:nth-child(2) {
+    top: 0px;
+}
+
+#nav-icon2 span:nth-child(3),
+#nav-icon2 span:nth-child(4) {
+    top: 18px;
+}
+
+#nav-icon2 span:nth-child(5),
+#nav-icon2 span:nth-child(6) {
+    top: 36px;
+}
+
+#nav-icon2.open span:nth-child(1),
+#nav-icon2.open span:nth-child(6) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon2.open span:nth-child(2),
+#nav-icon2.open span:nth-child(5) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon2.open span:nth-child(1) {
+    left: 5px;
+    top: 7px;
+}
+
+#nav-icon2.open span:nth-child(2) {
+    left: calc(50% - 5px);
+    top: 7px;
+}
+
+#nav-icon2.open span:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+}
+
+#nav-icon2.open span:nth-child(5) {
+    left: 5px;
+    top: 29px;
+}
+
+#nav-icon2.open span:nth-child(6) {
+    left: calc(50% - 5px);
+    top: 29px;
+}
+
+/* Icon 3 */
+
+#nav-icon3 span:nth-child(1) {
+    top: 0px;
+}
+
+#nav-icon3 span:nth-child(2),
+#nav-icon3 span:nth-child(3) {
+    top: 18px;
+}
+
+#nav-icon3 span:nth-child(4) {
+    top: 36px;
+}
+
+#nav-icon3.open span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon3.open span:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+#nav-icon3.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#nav-icon3.open span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+#nav-icon4 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+    top: 36px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: -3px;
+    left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+
+#nav-icon4.open span:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 39px;
+    left: 8px;
+}
+
+div[class*="box"] {
+    height: 33.33%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-1 {
+    background-color: #ff6766;
+}
+.box-2 {
+    background-color: #3c3c3c;
+}
+.box-3 {
+    background-color: #66a182;
+}
+
+.btn {
+    line-height: 50px;
+    height: 50px;
+    text-align: center;
+    width: 250px;
+    cursor: pointer;
+}
+
+.container {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 95px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    width: 180px;
+    height: 60px;
+    position: absolute;
+}
+
+.btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #91c9ff;
+    border-radius: 0;
+    outline: none;
+    transition: 1s ease-in-out;
+}
+
+svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+}
+
+.btn:hover {
+    transition: 1s ease-in-out;
+    background: #4f95da;
+}
+
+.btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        display: none;
+    }
+    #backButtonSmall {
+        background-color: transparent;
+        border: none;
+        border-radius: 0%;
+        cursor: pointer;
+        color: whitesmoke;
+        text-decoration: none;
+        font-family: Quicksand, sans-serif;
+        font-size: 2rem;
+        display: inline;
+        text-shadow: 0;
+        transition: text-shadow 1s;
+    }
+    #backButtonSmall:hover {
+        text-shadow: 1px 1px black;
+        transition: text-shadow 0.5s;
+        background-color: transparent;
+    }
+    #backButtonSmall:active {
+        color: black;
+        background-color: transparent;
+    }
+}
